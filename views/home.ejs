@@ -1,0 +1,26 @@
+<% include partials/header %>
+<form id="gameData">
+    <h3>What course are you playing?</h3>
+    <input type="text" maxlength="40" id="course" required>
+    <h3>How many holes are you playing?</h3>
+    <div class="gameLength noHiLte">
+      <input type="radio" name="gameLength" value="9" id="nine" checked/>
+      <label  class="nine radio" for="nine">9</label>
+      <span>or</span>
+      <input type="radio" name="gameLength" value="18" id="eighteen"/>
+      <label class="radio" for="eighteen">18</label>
+    </div>
+    <div class="addPlayers">
+      <h3>Add up to four players:</h3><i class="fa fa-plus noHiLte" aria-hidden="true"></i>
+      <!-- New player Input fields generated here -->
+    </div>
+    <input type='submit' class="startGame hide" value='Tee Off!'>
+  </form>
+
+
+  <div id="accordian-wrapper">
+    <div id="accordian" class="noHiLte">
+     <!--  Scorecard and players generated here -->
+    </div>
+  </div>
+<% include partials/footer %>
